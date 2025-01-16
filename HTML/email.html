@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bass.css">
+</head>
+<body>
+    <div class="all" id="all">
+        <div class="put">
+            <form action="">
+            <input type="text" id="name" placeholder="姓名" required>
+            <input type="text" id="position" list="positionlist" placeholder="职位" required>
+                <datalist id="positionlist">
+                    <option>---以下为工程能力中心职位---</option>
+                    <option>工程主管</option>
+                    <option>安全服务工程师</option>
+                    <option>渗透测试工程师</option>
+                    <option>---以下为威胁对抗中心职位---</option>
+                    <option>营销主管</option>
+                    <option>安全研究员</option>
+                    <option>---以下为渠道管理中心职位---</option>
+                    <option>渠道经理</option>
+                    <option>运营合作</option>
+                    <option>工程合作</option>
+                    <option>运营实习生</option>
+                    <option>渗透实习生</option>
+                    <option>见习成员</option>
+                    <option>---以下为创新研究中心职位---</option>
+                    <option>研发总监</option>
+                    <option>研发工程师</option>
+                    <option>---其他（请直接填写）---</option>
+                </datalist>
+            <select name="department" id="department">
+                <option value="部门" disabled selected hidden>请选择部门</option>
+                <option value="工程能力中心">工程能力中心</option>
+                <option value="威胁对抗中心">威胁对抗中心</option>
+                <option value="渠道管理中心">渠道管理中心</option>
+                <option value="创新研发中心">创新研发中心</option>
+            </select>
+            <div id="phall">
+                <select name="phonecode" id="phonecode">
+                    <option value="86" selected>中国 +86</option>
+                    <option value="1">美国 +1</option>
+                    <option value="7">俄罗斯 +7</option>
+                    <option value="81">日本 +81</option>
+                    <option value="44">英国 +44</option>
+                </select>
+                <input type="tel" placeholder="手机号" id="phone">
+            </div>
+            <input type="email" id="email" placeholder="邮箱" required>
+            <input type="text" id="address" placeholder="地址" required>
+            <button id="button.2">生成签名图片</button><br>
+            <button id="downloadbutton">下载</button>
+            <a id="download">
+                <button type="reset" id="button.1">重置</button>
+            </a> <!-- 下载标签 -->
+            </form>
+            <canvas id="paint" width="450" height="200" style="display:none"></canvas>
+        </div>
+    </div>
+    <img src="../Source/Signature.png" alt="签名" id="signatureimg">
+    <script src="../JS/Email Signature Generator.js"></script>
+</body>
+</html>

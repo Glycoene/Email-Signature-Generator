@@ -1,0 +1,14 @@
+#canvas
+{
+    border: 1px solid;
+    display: none;
+}
+
+#signatureimg
+{
+    width: 600px;
+    height: 267px;
+    padding-top: 91.5px;
+    padding-bottom: 91.5px;
+    border: 1px solid;
+}
